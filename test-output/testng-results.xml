@@ -2,12 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-21T17:50:53 IST" name="Default suite" finished-at="2024-06-21T17:51:11 IST" duration-ms="18312">
+  <suite started-at="2024-06-24T17:33:04 IST" name="Default suite" finished-at="2024-06-24T17:33:29 IST" duration-ms="25428">
     <groups>
     </groups>
-    <test started-at="2024-06-21T17:50:53 IST" name="Default test" finished-at="2024-06-21T17:51:11 IST" duration-ms="18312">
+    <test started-at="2024-06-24T17:33:04 IST" name="Default test" finished-at="2024-06-24T17:33:29 IST" duration-ms="25428">
       <class name="com.altimetrik.OneWay_Flight_Search_Analysis">
-        <test-method signature="onewaySearchAnalysis()[pri:0, instance:com.altimetrik.OneWay_Flight_Search_Analysis@7c711375]" started-at="2024-06-21T17:50:53 IST" name="onewaySearchAnalysis" finished-at="2024-06-21T17:51:11 IST" duration-ms="18279" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.altimetrik.OneWay_Flight_Search_Analysis@338fc1d8]" started-at="2024-06-24T17:33:04 IST" name="beforeTest" finished-at="2024-06-24T17:33:04 IST" duration-ms="294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="onewaySearchAnalysis()[pri:0, instance:com.altimetrik.OneWay_Flight_Search_Analysis@338fc1d8]" started-at="2024-06-24T17:33:04 IST" name="onewaySearchAnalysis" finished-at="2024-06-24T17:33:29 IST" duration-ms="25111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onewaySearchAnalysis -->

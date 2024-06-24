@@ -5,6 +5,7 @@
     <classes>
       <class name="com.altimetrik.OneWay_Flight_Search_Analysis">
         <methods>
+          <include name="beforeTest"/>
           <include name="onewaySearchAnalysis"/>
         </methods>
       </class> <!-- com.altimetrik.OneWay_Flight_Search_Analysis -->
