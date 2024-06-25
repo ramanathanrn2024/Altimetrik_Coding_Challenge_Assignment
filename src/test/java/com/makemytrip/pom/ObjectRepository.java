@@ -29,24 +29,16 @@ public class ObjectRepository {
 	private WebDriver driver;
 	
 //	ExtentReports extent;
-	ExtentTest test;
-	
-	
+	ExtentTest test;	
 //	private WebDriver driver;
 //	ExtentReports extent = new ExtentReports();
 //	ExtentTest test;
-//	
 	
 	public ObjectRepository(WebDriver driver, ExtentTest test){
 		this.driver=driver;	
 		PageFactory.initElements(driver, this);
 		this.test = test;
 	}
-
-	//	@FindBy(xpath="(//h3[@class='expired-popup-heading'])[2]")
-//	public WebElement expiryPopupMsg;
-//	
-	
 	 	//MakmyTripe 
 		@FindBy(xpath="//input[@id='fromCity']") //Prod FedEx acc xpath
 		private WebElement findFromCity;
@@ -85,7 +77,7 @@ public class ObjectRepository {
 		@FindBy(xpath="//p//span//span[text()='Chennai']")
 		private WebElement toscMultyciti;	
 		
-		@FindBy(xpath="//div[@aria-label='Mon Jun 24 2024']")
+		@FindBy(xpath="//div[@aria-label='Thu Jun 27 2024']")
 		private WebElement departureDate;
 				
 		@FindBy(xpath="//a[@class='primaryBtn font24 latoBold widgetSearchBtn  fltWidgetSearchBtnMultiCity']")
@@ -99,15 +91,7 @@ public class ObjectRepository {
 		
 		@FindBy(xpath="//div[@id='listingPage_multicurrencyCard_logoContainer']") 
 		private WebElement Multicurrency_Card;	
-		
-		//div[@id="listingPage_multicurrencyCard_logoContainer"]
-		
-		//a[@class="primaryBtn font24 latoBold widgetSearchBtn  fltWidgetSearchBtnMultiCity"]
-		
-		//div[@aria-label="Sun Jun 23 2024"]
-		
-//		//div[@aria-label="Mon Jun 24 2024"]
-				
+			
 //		public void selectDate() {
 //			LocalDateTime myDateObj = LocalDateTime.now();  			
 ////		    System.out.println("Before Formatting: " + myDateObj);  
@@ -145,7 +129,7 @@ public class ObjectRepository {
 			String text = webElement.getText();
 			if(!text.trim().equals("NEW")){
 				test.log(Status.PASS,"Auto Suggested Cities: "+text);	
-//				System.out.println("Auto Suggested Cities: "+text);
+				System.out.println("Auto Suggested Cities: "+text);
 				}			
 			}
 		
@@ -192,7 +176,7 @@ public class ObjectRepository {
 				String  exchangerates = mmtfcRateSplit[0];
 				if((exchangerates.trim().equals("EUR"))|| (exchangerates.trim().equals("USD"))|| (exchangerates.trim().equals("NZD"))){					
 					test.log(Status.PASS,"FCC Exchange Rates: "+fcrate.replace("₹", ":"));
-//					System.out.println("FCC Exchange Rates: "+fcrate.replace("₹", ":"));					
+					System.out.println("FCC Exchange Rates: "+fcrate.replace("₹", ":"));					
 					}			
 				}
 		}

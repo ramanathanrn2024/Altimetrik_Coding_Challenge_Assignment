@@ -44,8 +44,7 @@ public class OneWay_Flight_Search_Analysis extends BaseClass {
 	@AfterClass
 	public void afterClass() {
 		ExtReporterClass.flushReport();
-	}
-	
+	}	
 	
 private void takeScreenshot() throws IOException {
 	// TODO Auto-generated method stub
@@ -65,7 +64,7 @@ private void takeScreenshot() throws IOException {
 //		String expectedTitle = "MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights & Holiday";			
 //		Assert.assertEquals(expectedTitle,actualTitle);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);		
-//		One-Way Flight Search and Filter Analysis Scenarios
+//		Scenario 1: One-Way Flight Search and Filter Analysis Scenarios
 		test.log(Status.PASS,"Make My Trip One-Way Flight Search and Filter Analysis");		
 		or.enterFromCity(mmytripFromCity);		
 		test.log(Status.PASS,"MMY From City Sucessfully Entered:"+mmytripFromCity);		
@@ -85,7 +84,7 @@ private void takeScreenshot() throws IOException {
 		//8. Close the new “make-my trip” tabs opened if any.
 		
 		
-//		Multi City Flight Search Scenarios
+//		Scenario 2: Multi City Flight Search Scenarios
 		test.log(Status.PASS,"Multi City Flight Search");	
 		or.mmtLogo();
 		test.log(Status.PASS,"Sucessfully Moved Make My Trip Home Page");	
@@ -94,8 +93,7 @@ private void takeScreenshot() throws IOException {
 		or.auto_suggested_cities();		
 		or.multycity();
 		or.fromMultyciti(mmytripFromCity);
-		test.log(Status.PASS,"Multi TO City Sucessfully Entered:"+mmytripFromCity);
-		
+		test.log(Status.PASS,"Multi TO City Sucessfully Entered:"+mmytripFromCity);		
 		or.toMultyciti(mmytripMultiFromCity);		
 		or.toselectMultyciti();
 		test.log(Status.PASS,"Multi TO City Sucessfully Entered:"+mmytripMultiFromCity);
@@ -109,7 +107,7 @@ private void takeScreenshot() throws IOException {
 		takeScreenshot();
 		test.log(Status.PASS,"Multi City after Entring Departure dates seach taken screen shot for“Hold on, we’re fetching flights for you”. ");
 
-//		Forex Card and Currency Scenarios
+//		Scenario 3:Forex Card and Currency Scenarios
 		test.log(Status.PASS,"Forex Card and Currency");	
 		or.mmtLogo();
 		test.log(Status.PASS,"Sucessfully Moved Make My Trip Home Page");	
@@ -125,7 +123,9 @@ private void takeScreenshot() throws IOException {
 		//3. Log the Multi Currency Card in the following way:
 		//4. Every alternate word in the definition should be reversed like below:
 		//5. A ycneruccitluM Card si a diaprep card dengised specifically rof international .srelevart It si fully tnalpmoc with IBR regulations dna provides ecape of dnim with %001 acceptance ta all stnahcrem ni over 051 .seirtnuoc It osla provides latigid controls nihtiw the ,ppa allowing uoy to /kcolnu lock the drac yltniatsni dna offers lareves benefits ,tuohtiw the deen to knil your knab account ot the .dra
-//		//Closing the browser
+
+
+//		Closing the browser
 		extent.flush();
 		driver.quit(); 
 		test.log(Status.PASS,"Sucessfully Scripts Executed Completed :One-Way Flight Search Filter Analysis Multi City Flight Search and Forex Card and Currency");	
